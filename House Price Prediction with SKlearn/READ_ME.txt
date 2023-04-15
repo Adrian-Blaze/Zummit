@@ -1,0 +1,2 @@
+Given the home price data for the city of Banglore in India, projects aims at developing a model the is capable of predicting prices for different area in Banglore and different home criterias.
+The trained model makes use of the sklearn machine learning framework linear regression to achieve its goal.
