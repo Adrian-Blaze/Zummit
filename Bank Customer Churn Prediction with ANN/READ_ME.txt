@@ -1,0 +1,2 @@
+Given the customer data for a particular bank, the model aims to predict the churn rate of the customers; ie whether a customer stays with the bank or leaves the bank.
+This model is developed using the tensorflow deep learning framework and artificial neural network.
