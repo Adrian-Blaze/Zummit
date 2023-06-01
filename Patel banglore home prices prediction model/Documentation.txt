@@ -1,0 +1,64 @@
+# Bengaluru House Price Prediction
+
+This project aims to predict house prices in Bengaluru, India using a machine learning model. The dataset used for this project is the "Bengaluru House Prices" dataset, which contains various features related to house properties in Bengaluru.
+
+## Dataset
+
+The dataset used for this project is stored in a CSV file named "bengaluru_house_prices.csv". It contains the following features:
+
+- `area_type`: The type of area where the property is located (e.g., Super built-up Area, Plot Area)
+- `availability`: The availability status of the property (e.g., Ready To Move, Immediate Possession)
+- `location`: The location where the property is situated
+- `size`: The size of the property in terms of the number of bedrooms
+- `total_sqft`: The total square footage of the property
+- `bath`: The number of bathrooms in the property
+- `balcony`: The number of balconies in the property
+- `price`: The price of the property in Indian Rupees (INR)
+- `society`: The name of the housing society (if applicable)
+
+## Data Preprocessing
+
+Before building the machine learning model, the dataset undergoes several preprocessing steps, including:
+
+1. Dropping unnecessary columns (`area_type`, `society`, `bath`, `balcony`) that are not relevant for price prediction.
+2. Handling missing values by removing rows with missing values (`dropna`).
+3. Parsing and converting the `size` feature to numeric representation.
+4. Cleaning and converting the `total_sqft` feature to a standardized range of total square footage.
+5. Handling categorical variables (`availability`, `location`) using one-hot encoding (`get_dummies`) and grouping rare categories.
+
+## Exploratory Data Analysis
+
+The dataset is explored through visualizations and statistical analysis to gain insights into the data and its relationship with the target variable (`price`). Some exploratory analysis includes:
+
+- Visualizing the distribution of prices and other variables.
+- Analyzing the availability status and location distribution.
+- Identifying and removing outliers in the price per square footage.
+
+## Model Building
+
+The dataset is split into training and testing sets using the `train_test_split` function from scikit-learn. Several regression models are trained and evaluated for house price prediction, including:
+
+- Linear Regression
+- Random Forest Regression
+- Lasso Regression
+- Decision Tree Regression
+
+Hyperparameter tuning using cross-validation (`GridSearchCV`) is performed to select the best model and parameters.
+
+## Usage
+
+To use the trained model for predicting house prices, follow these steps:
+
+1. Load the trained model and column information from the saved files.
+2. Prepare the input values for prediction, including the number of bedrooms (`bedsize`), total square footage (`sqft`), location, and availability.
+3. Call the `prediction` function, passing the input values as arguments.
+4. The function will return the predicted house price based on the input values.
+
+
+## Conclusion
+
+This project demonstrates the application of machine learning techniques for predicting house prices in Bengaluru. By training and evaluating different regression models, we can obtain reasonably accurate predictions for house prices based on the provided features.
+
+Feel free to explore the code and adapt it for your own use case. If you have any questions or suggestions, please feel free to reach out.
+
+
