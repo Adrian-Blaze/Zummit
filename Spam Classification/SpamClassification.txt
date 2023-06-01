@@ -1,0 +1,28 @@
+Spam Classification using Multinomial Naive Bayes
+Introduction
+Spam classification is the task of automatically identifying whether an email or message is spam (unsolicited or unwanted) or ham (legitimate or wanted). Multinomial Naive Bayes (MultinomialNB) is a popular algorithm used for text classification tasks like spam classification. This documentation provides an overview of the spam classification process using MultinomialNB and outlines the necessary steps to implement it.
+
+1. Prerequisites
+To implement spam classification using MultinomialNB, you need the following prerequisites:
+
+Python (version 3 or above)
+NumPy and pandas libraries for data manipulation
+Scikit-learn library for machine learning algorithms
+
+2. Data Preprocessing
+Before training the model, the data needs to be preprocessed to ensure quality and consistency. Preprocessing steps may include:
+
+Removing any irrelevant information like email headers or HTML tags.
+Converting the text to lowercase.
+Removing punctuation and special characters.
+Removing stop words (common words like "the," "is," etc. that do not carry much meaning).
+Performing stemming or lemmatization to reduce words to their root form.
+
+3. Model Training
+MultinomialNB Algorithm
+Multinomial Naive Bayes (MultinomialNB) is a probabilistic algorithm often used for text classification tasks. It assumes that the features (word frequencies in our case) are conditionally independent given the class label. To train the MultinomialNB model:
+
+Split the preprocessed and feature-extracted data into training and testing sets.
+Initialize an instance of the MultinomialNB class from scikit-learn.
+Fit the model to the training data using the fit method.
+Evaluate the model's performance using appropriate metrics (e.g., accuracy)
