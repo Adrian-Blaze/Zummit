@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Working with the Iris Dataset
 Introduction
 The Iris dataset is a popular and widely-used dataset in machine learning and pattern recognition. It contains measurements of four features (sepal length, sepal width, petal length, and petal width) of three different species of Iris flowers (Setosa, Versicolor, and Virginica). The goal is to predict the species of an Iris flower based on its feature measurements. This documentation provides an overview of working with the Iris dataset and outlines the necessary steps to analyze and build a machine learning model using it.
@@ -27,4 +28,35 @@ The SVM model is trained using the training data, and its performance is evaluat
 5. Conclusion
 In this documentation, we have shown how to load and preprocess the Iris dataset, visualize the sepal properties of the flowers, and train an SVM model for flower classification. By following the steps, you can gain insights into the dataset and build an SVM model for classifying Iris flowers into different species.
 
+=======
+Working with the Iris Dataset
+Introduction
+The Iris dataset is a popular and widely-used dataset in machine learning and pattern recognition. It contains measurements of four features (sepal length, sepal width, petal length, and petal width) of three different species of Iris flowers (Setosa, Versicolor, and Virginica). The goal is to predict the species of an Iris flower based on its feature measurements. This documentation provides an overview of working with the Iris dataset and outlines the necessary steps to analyze and build a machine learning model using it.
+
+1. Prerequisites
+To work with the Iris dataset and build a machine learning model, you need the following prerequisites:
+
+Python (version 3 or above)
+NumPy and pandas libraries for data manipulation
+Scikit-learn library for machine learning algorithms
+Matplotlib and seaborn libraries for data visualization
+
+
+2. Dataset Overview
+Data Description
+The Iris dataset consists of 150 samples, with each sample having four features (sepal length, sepal width, petal length, and petal width) and a corresponding species label (Setosa, Versicolor, or Virginica). The goal is to build a model that can predict the species of an Iris flower based on its feature measurements.
+
+
+3. Data Visualization
+To gain insights into the dataset, scatter plots are created to visualize the relationship between the sepal length and sepal width of the flowers. Different colors represent different flower species.
+
+
+4. Model Training and Evaluation
+The SVM model is trained using the training data, and its performance is evaluated on the test data using the score method. The accuracy score is printed to assess the model's classification performance.
+
+
+5. Conclusion
+In this documentation, we have shown how to load and preprocess the Iris dataset, visualize the sepal properties of the flowers, and train an SVM model for flower classification. By following the steps, you can gain insights into the dataset and build an SVM model for classifying Iris flowers into different species.
+
+>>>>>>> 7b831deba254b634981bfc90c395a73363109ec4
 Please note that this is a simplified implementation for demonstration purposes. In practice, it is recommended to perform further analysis, hyperparameter tuning,
